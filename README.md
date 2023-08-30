@@ -3,7 +3,7 @@
 
 A simple web application that uses the ChatGPT API to paraphrase sentences or text input.
 
-<img src={}/>
+<img src="/public/Word_Parahrasing_APP.png"/>
 
 ## Table of Contents
 - [Introduction](#introduction)
