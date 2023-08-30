@@ -1,8 +1,7 @@
 import React, {useState} from "react";
 import axios from 'axios';
+import OpenAIApi from "openai";
 
-
-const ApiKey = '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';
 
 const ApiCall = () => {
   const [originalText, setOriginalText] = useState('');
@@ -22,7 +21,7 @@ const ApiCall = () => {
         {
           headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${ApiKey}`
+            'Authorization': `Bearer ${import.meta.env.VITE_APP_OPENAI_KEY}`
           }
         }
       );

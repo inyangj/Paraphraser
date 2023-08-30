@@ -15,6 +15,9 @@ dist-ssr
 # Production
 /build
 
+# Misc
+.env
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
