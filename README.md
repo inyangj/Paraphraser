@@ -3,7 +3,8 @@
 
 A simple web application that uses the ChatGPT API to paraphrase sentences or text input
 
-<a href="https://paraphraser-w8i4-git-main-inyangj.vercel.app/><img src="/public/Word_Parahrasing_APP.png"/></a>
+https://paraphraser-w8i4-git-main-inyangj.vercel.app/
+<img src="/public/Word_Parahrasing_APP.png"/>
 
 
 ## Table of Contents
@@ -43,4 +44,3 @@ Copy to Clipboard feature that allows users to copy the paraphrased text to thei
 # Different Language Flavors
 Options to paraphrase text or sentences based on the user's preferences (Formal, Creative or Funky) will be added
 
-<a href="https://paraphraser-w8i4-git-main-inyangj.vercel.app/>Link to the project</a>
