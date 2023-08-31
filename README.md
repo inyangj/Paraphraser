@@ -10,7 +10,7 @@ https://paraphraser-w8i4-git-main-inyangj.vercel.app/
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-- [Features To Be Added] (#Coming_Soon)
+- [Features_To_Be_Added](#Coming_Soon)
 
 
 ## Introduction
