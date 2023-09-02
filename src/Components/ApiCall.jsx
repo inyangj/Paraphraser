@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import axios from 'axios';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import OpenAIApi from "openai";
 
 
@@ -7,6 +8,7 @@ const ApiCall = () => {
   const [originalText, setOriginalText] = useState('');
   const [paraphrasedText, setParaphrasedText] = useState('');
   const [Loading, setLoading] = useState(false);
+  const [clipboard, setClipboard] = useState(false);
 
   const handleParaphrase = async () => {
     setLoading(true);
@@ -25,14 +27,19 @@ const ApiCall = () => {
           }
         }
       );
-        console.log(response);
-        console.log(response.data.choices[0].message.content)
+        
       setParaphrasedText(response.data.choices[0].message.content);
+
     } catch (error) {
       console.error('Error paraphrasing:', error);
     } finally {
       setLoading(false); 
+      setClipboard(false);
     }
+  };
+
+  const handleCopy = () => {
+    setClipboard(true);
   };
 
     return (
@@ -62,9 +69,12 @@ const ApiCall = () => {
                 <p className=" bg-inherit min-h-40 font-medium  sm:h-5/6 w-full p-2 text-zinc-50">
                 {paraphrasedText}
                 </p>
+                <CopyToClipboard text={paraphrasedText} onCopy={handleCopy}>
+                  <p className="text-end">{clipboard ? 'Copied!' : 'Copy to Clipboard'}</p>
+                </CopyToClipboard>
             </div>
         </div>
-        <button className="text-xl font-medium  p-2 mx-auto flex rounded-3xl hover:bg-[rgba(94,93,112,0.5)] active:bg-[rgba(94,93,112,0.8)] bg-[#5E5D70] mt-36 sm:mt-12 sm:mb-8" onClick={handleParaphrase} >
+        <button className="text-xl font-medium  p-2 mx-auto  flex rounded-3xl hover:bg-[rgba(94,93,112,0.5)] active:bg-[rgba(94,93,112,0.8)] bg-[#5E5D70] mt-36 sm:mt-12 sm:mb-8" onClick={handleParaphrase} >
         {Loading ? 'Paraphrasing...' : 'Paraphrase'}
         </button>
       </div>

@@ -29,17 +29,14 @@ The app features a clean and user-friendly interface that makes it easy for user
 # Real-Time Feedback
 While the paraphrasing request is being processed, the app provides real-time feedback to the user. A loading indicator is displayed on the "Paraphrase" button, indicating that the app is working on the request.
 
-# Responsive Design
-The app is designed to be responsive and adapt to various screen sizes and devices.
+# Clipboard
+Copy to Clipboard feature that allows users to copy the paraphrased text to their clipboard with a single click.
 
 # Code Structure
 The code is well organized and follows best practices for React development. It separates concerns into different components, making it easy for developers to understand and extend the app.
 
 
 ## Coming_Soon
-
-# Clipboard
-Copy to Clipboard feature that allows users to copy the paraphrased text to their clipboard with a single click.
 
 # Different Language Flavors
 Options to paraphrase text or sentences based on the user's preferences (Formal, Creative or Funky) will be added
