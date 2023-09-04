@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import axios from 'axios';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import OpenAIApi from "openai";
@@ -38,9 +38,24 @@ const ApiCall = () => {
     }
   };
 
+
+  useEffect(() => {
+    let timeout;
+    if (clipboard) {
+      timeout = setTimeout(() => {
+        setClipboard(false);
+      }, 5000);
+    }
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [clipboard]);
+
   const handleCopy = () => {
     setClipboard(true);
   };
+
 
     return (
       <div>
@@ -66,11 +81,11 @@ const ApiCall = () => {
             <div className="bg-[#383A46] border-2 rounded mt-4 sm:mt-0">
                 <h1 className="text-xl font-bold text-zinc-50 p-2 bg-[#5E5D70]">Paraphrased Text</h1>
                 <div className="border "></div>
-                <p className=" bg-inherit min-h-40 font-medium  sm:h-5/6 w-full p-2 text-zinc-50">
+                <p className=" bg-inherit min-h-40 font-medium  sm:h-3/4 w-full p-2 text-zinc-50">
                 {paraphrasedText}
                 </p>
                 <CopyToClipboard text={paraphrasedText} onCopy={handleCopy}>
-                  <p className="text-end">{clipboard ? 'Copied!' : 'Copy to Clipboard'}</p>
+                  <p className="text-end cursor-pointer p-2">{clipboard ? 'Copied!' : 'Copy to Clipboard'}</p>
                 </CopyToClipboard>
             </div>
         </div>
