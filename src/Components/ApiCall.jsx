@@ -10,6 +10,7 @@ const ApiCall = () => {
   const [Loading, setLoading] = useState(false);
   const [clipboard, setClipboard] = useState(false);
 
+
   const handleParaphrase = async () => {
     setLoading(true);
     setParaphrasedText('');
@@ -56,7 +57,9 @@ const ApiCall = () => {
   }, [clipboard]);
 
   const handleCopy = () => {
-    setClipboard(true);
+    if (paraphrasedText !== '') {
+      setClipboard(true);
+    }
   };
 
 
