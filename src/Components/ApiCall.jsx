@@ -98,7 +98,7 @@ const ApiCall = () => {
           {Loading ? 'Paraphrasing...' : 'Paraphrase'}
           </button>
           <CopyToClipboard text={paraphrasedText} onCopy={handleCopy}>
-                    <p className="cursor-pointer p-2 sm:text-xl font-medium  p-2.5   flex rounded-3xl hover:bg-[rgba(94,93,112,0.5)] active:bg-[rgba(94,93,112,0.8)] bg-[#463dea] mt-38 sm:mt-2 sm:mb-8">{clipboard ? 'Copied!' : 'Copy to Clipboard'}</p>
+                    <p className="cursor-pointer  sm:text-xl font-medium  p-2.5   flex rounded-3xl hover:bg-[rgba(94,93,112,0.5)] active:bg-[rgba(94,93,112,0.8)] bg-[#463dea] mt-38 sm:mt-2 sm:mb-8">{clipboard ? 'Copied!' : 'Copy to Clipboard'}</p>
                   </CopyToClipboard>
         </div>
       </div>
