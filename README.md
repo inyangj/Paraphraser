@@ -53,7 +53,7 @@ Before you begin, ensure you have met the following requirements:
 
 ## Usage
 1. Start the development server: npm start
-2. Open your web browser and access the app at http://localhost:3000.
+2. Open your web browser and access the app at your localhost port.
 3. Enter the text you want to paraphrase in the provided textarea.
 4. Click the "Paraphrase" button to initiate the process.
 5. View the paraphrased text and click "Copy to Clipboard" if you want 
