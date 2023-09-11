@@ -10,34 +10,62 @@ https://paraphraser-w8i4-git-main-inyangj.vercel.app/
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
-- [Features_To_Be_Added](#Coming_Soon)
-
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Coming_Soon](#Coming_Soon)
+- [Contributing](#contributing)
 
 ## Introduction
 
-This React application allows you to paraphrase sentences or text using the ChatGPT API provided by OpenAI. Users can input a sentence, and the app will send it to the API for paraphrasing. The paraphrased text will then be displayed to the user.
+The Paraphrasing App is a powerful tool designed to simplify the process of paraphrasing text using artificial intelligence. Whether you're a student, writer, marketer, or professional, this app can save you time and improve the quality of your writing by providing quick and accurate paraphrased content.
 
 ## Features
 
-# Paraphrase Sentences or Text
-The Paraphrasing App allows users to input sentences or text that they want to be paraphrased.
+- Paraphrase text quickly and efficiently.
+- Copy paraphrased text to your clipboard with a single click.
+- Real-time feedback and progress indicators.
+- Easy-to-use and intuitive user interface.
 
-# User-Friendly Interface
-The app features a clean and user-friendly interface that makes it easy for users to interact with the paraphrasing functionality.
+## Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js installed on your system.
+- OPENAI API access key (required for the AI service).
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Renaissance-Innovation-Labs/AI-Paraphrasing-Tool.git
+
+2. Navigate to the project folder:
+    cd paraphrasing-app
+
+3. Install the dependencies:
+    npm install
 
 
-# Real-Time Feedback
-While the paraphrasing request is being processed, the app provides real-time feedback to the user. A loading indicator is displayed on the "Paraphrase" button, indicating that the app is working on the request.
-
-# Clipboard
-Copy to Clipboard feature that allows users to copy the paraphrased text to their clipboard with a single click.
-
-# Code Structure
-The code is well organized and follows best practices for React development. It separates concerns into different components, making it easy for developers to understand and extend the app.
+## Usage
+1. Start the development server: npm start
+2. Open your web browser and access the app at http://localhost:3000.
+3. Enter the text you want to paraphrase in the provided textarea.
+4. Click the "Paraphrase" button to initiate the process.
+5. View the paraphrased text and click "Copy to Clipboard" if you want 
+    to use it elsewhere.
 
 
 ## Coming_Soon
+1. Multilingual Support: Enable paraphrasing in multiple languages.
+2. Advanced Paraphrasing Modes: Offer style and tone options like "formal" and "creative."
+3. Feedback and Revision Assistance: Provide suggestions for text improvement.
+4. Document Integration: Paraphrase entire documents, including PDFs and Word files.
 
-# Different Language Flavors
-Options to paraphrase text or sentences based on the user's preferences (Formal, Creative or Funky) will be added
 
+## Contributing
+We welcome contributions from the community. If you have ideas for improvements or would like to report issues, please open an issue or submit a pull request.

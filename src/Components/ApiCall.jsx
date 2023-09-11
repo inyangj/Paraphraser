@@ -65,7 +65,7 @@ const ApiCall = () => {
 
     return (
       <div className="grid gap-5">
-        <div className="grid sm:grid-cols-2 sm:justify-between pt-10 gap-5 sm:gap-10 h-96 border-solid ">
+        <div className="grid sm:grid-cols-2 sm:justify-between pt-10 gap-5 sm:gap-10 h-96 border-solid relative">
 
 
           
@@ -80,6 +80,7 @@ const ApiCall = () => {
                 onChange={(e) => setOriginalText(e.target.value)}
                 />
             </div>
+          
           <div className=" bg-[#383A46]  border-2 rounded sm:h-full">
                 <h1 className="text-xl font-bold text-zinc-50 p-2 bg-[#5E5D70]">Paraphrased Text</h1>
                 <div className="border "></div>
@@ -90,9 +91,12 @@ const ApiCall = () => {
                 readOnly
                 />
             </div>
-
-
+        
+              
         </div>
+        <div>
+              {Loading ? <img src="/chicken.gif" alt="" className="absolute top-2/3 sm:top-3/4 md:left-1/2 left-80 sm:w-40  w-20" /> : <div className="hidden"></div>}
+            </div>
         <div className="flex items-center justify-between">
           <button className="text-xl font-medium  p-2.5   flex rounded-3xl hover:bg-[rgba(94,93,112,0.5)] active:bg-[rgba(94,93,112,0.8)] bg-[#463dea] mt-38 sm:mt-2 sm:mb-8" onClick={handleParaphrase} >
           {Loading ? 'Paraphrasing...' : 'Paraphrase'}
