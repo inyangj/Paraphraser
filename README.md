@@ -6,6 +6,8 @@ A simple web application that uses the ChatGPT API to paraphrase sentences or te
 https://paraphraser-w8i4-git-main-inyangj.vercel.app/
 <img src="/public/Word_Parahrasing_APP.png"/>
 
+https://docs.google.com/presentation/d/1NwvkT-MTk6JUWHKH6ri1S4eWlH1US1cL8kgh4B2_1Yw/edit?usp=sharing
+
 
 ## Table of Contents
 - [Introduction](#introduction)
